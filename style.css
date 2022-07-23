@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+*
+{
+padding: 0%;
+margin: 0%;
+}
+.container
+{
+ height: 75vh;
+ width:  95%;
+ margin: 50px auto;
+ border: 5px rgb(222, 25, 25) solid;
+}
+.carousel
+{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.slider
+{
+  height: 100%;
+  display: flex;
+  width: 400%;
+  transition: all 0.9s;  
+}
+#marging
+{
+position: absolute;
+z-index: 4;
+display: flex;
+flex-basis: 0%;
+width: 95%;
+height: 95%;
+top: 3.5%;
+bottom: 2.5%;
+background-color: transparent;
+border: 3px black solid;
+font-size: 40px;
+top: 6px;
+word-break: break-all;
+left: 2%;
+right: 2%;
+}
+.slider section
+{
+  position: relative;
+  flex-basis: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 200px;
+}
+#color1
+{
+background-color: red;  
+}
+#color2
+{
+background-color: blue;
+}
+#color3
+{
+background-color: yellow;
+}
+#color4
+{
+background-color: azure;
+}
+.controls .arrow
+{
+position: absolute;
+top: 50%;
+cursor: pointer;
+transform: translateY(-50%);
+z-index: 6;
+}
+@media (max-width: 780px) {
+
+.controls .arrow
+{
+display: none;
+min-width: none;
+}
+
+}
+.arrow.left 
+{
+  left: 70px;
+  font-size: 150px;
+
+}
+.arrow.right
+{
+  right: 70px;
+  font-size: 150px;
+}
+.controls ul
+{
+  position: absolute;
+  bottom: 50px;
+  list-style: none;
+  transform: translate(-50%);
+  left: 50%;
+  display: flex;
+  gap: 10px;
+  background: transparent;
+  z-index: 5;
+}
+.controls ul li
+{
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  justify-content: space-between;
+  border: solid 2px black;
+  cursor: pointer;
+  background-color: black;
+}
+.controls ul li.selected
+{
+background-color: transparent;
+}
